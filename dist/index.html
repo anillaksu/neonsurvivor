@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeonSurvivor</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#000011">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+        
+        <!-- Mobile Controls -->
+        <div id="mobileControls">
+            <div id="joystick">
+                <div id="joystickKnob"></div>
+            </div>
+        </div>
+        
+        <!-- UI Elements -->
+        <div id="ui">
+            <div id="score">Score: 0</div>
+            <div id="level">Level: 1</div>
+            <div id="health">Health: 100</div>
+        </div>
+        
+        <!-- Game Over Screen -->
+        <div id="gameOver" class="hidden">
+            <h2>Game Over!</h2>
+            <p>Final Score: <span id="finalScore">0</span></p>
+            <p>Level Reached: <span id="finalLevel">1</span></p>
+            <button id="restartBtn">Tap to Restart</button>
+        </div>
+        
+        <!-- Upgrade Screen -->
+        <div id="upgradeScreen" class="hidden">
+            <h2>Level Up!</h2>
+            <p>Choose an upgrade:</p>
+            <div id="upgradeOptions"></div>
+        </div>
+    </div>
+    
+    <script src="config.json"></script>
+    <script src="game.js"></script>
+</body>
+</html>

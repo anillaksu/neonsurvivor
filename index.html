@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <title>NeonSurvivor - Mobile Survival Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header-controls">
+            <h1 class="game-title">NEON SURVIVOR</h1>
+            <button id="fullscreen-btn" class="fullscreen-button" title="Tam Ekran">
+                <span class="fullscreen-icon">⛶</span>
+            </button>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div class="controls">
+            <p>Use virtual joystick or WASD to move • Bullets auto-fire • Survive as long as possible!</p>
+            <p class="fullscreen-hint">Tam ekran için ⛶ butonuna tıklayın</p>
+        </div>
+        
+        <div id="joystick-container">
+            <div id="joystick-base">
+                <div id="joystick-knob"></div>
+            </div>
+        </div>
+        
+        <button id="mobile-restart-btn" style="display: none;">
+            Tap to Restart
+        </button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
